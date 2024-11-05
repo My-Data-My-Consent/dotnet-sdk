@@ -58,7 +58,7 @@ jobs:
             - name: Create the package
               run: dotnet pack --configuration Release src/MyDataMyConsent/MyDataMyConsent.csproj
 
-            - uses: actions/delete-package-versions@v3
+            - uses: actions/delete-package-versions@v5
               with:
                 package-name: 'MyDataMyConsent'
                 num-old-versions-to-delete: 1
